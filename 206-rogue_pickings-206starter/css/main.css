@@ -161,7 +161,7 @@ footer span {
 
 /*****MEDIA QUERIES****/
 /***TABLET***/
-@media (min-width: 768px) {
+@media all and (min-width:768px) {
 .bottom-section {
 	flex-flow: row wrap;
 	align-items: flex-start;
@@ -180,7 +180,7 @@ footer span {
 }
 }
 
-@media (min-width: 1200px) {
+@media all and (min-width:1200px) {
 
 header {
 	flex-flow: row;
@@ -189,7 +189,16 @@ header {
 	width: 90%;
 }
 
+header h1{
+	border-bottom: none;
+}
+
  header nav ul li {
 	 display: inline;
  }
+}
+
+footer {
+	border-top: 1px solid #eee;
+	width: 90%;
 }
